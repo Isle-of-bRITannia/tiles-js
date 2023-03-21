@@ -1,0 +1,22 @@
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+}
+
+#canvas {
+  margin: auto;
+  width: 100vh;
+}
