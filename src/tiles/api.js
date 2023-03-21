@@ -33,6 +33,10 @@ const API = {
                   (frontTile))
           (backTile)
   ),
+
+  // Somewhat more advanced features of the API, used occasionally
+  // above to concisely implement some tricky features. We'll cover
+  // (some) of what and why these things are in the future  
   map: (f) => (tile) => (
     API.ap(API.pure(f))(tile)
   ),
@@ -40,6 +44,8 @@ const API = {
   ap: (functionTile) => (domainTile) => (
     Alg.ap(functionTile, domainTile)
   ),
+
+  // Exists to import existing images into a tile
   fromImage: (img) => (
     Alg.fromImage(img)
   )

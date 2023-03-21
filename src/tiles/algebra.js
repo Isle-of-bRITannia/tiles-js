@@ -20,6 +20,8 @@ const Alg = {
     functionTile,
     domainTile
   }),
+
+  // Unfortunate but (as far as I can currently tell) somewhat necessary.
   fromImage: (img) => {
     return {
       _tag: 'FromImage',
